@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class MusicCard extends React.Component {
-  constructor() {
-    super();
+  // constructor() {
+  //   super();
 
-    this.state = {
-      albumInfo: {},
-      albumTracks: [],
-    };
-  }
+  //   this.state = {
+  //     albumInfo: {},
+  //     albumTracks: [],
+  //   };
+  // }
 
   componentDidMount = async () => {
     // const { match: { params: { id } } } = this.props;

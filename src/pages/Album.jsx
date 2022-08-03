@@ -26,7 +26,7 @@ class Album extends React.Component {
     });
   }
 
-  handleChange = (objeto, { target }) => {
+  handleChange = async (objeto, { target }) => {
     console.log(objeto);
     console.log(target.checked);
   }
