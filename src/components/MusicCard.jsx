@@ -2,25 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class MusicCard extends React.Component {
-  // constructor() {
-  //   super();
-
-  //   this.state = {
-  //     albumInfo: {},
-  //     albumTracks: [],
-  //   };
-  // }
-
-  componentDidMount = async () => {
-    // const { match: { params: { id } } } = this.props;
-    // const respApi = await getMusics(id);
-
-    // this.setState({
-    //   albumInfo: respApi[0],
-    //   albumTracks: respApi.filter(({ wrapperType }) => wrapperType !== 'collection'),
-    // });
-  }
-
   render() {
     const { trackName, previewUrl, trackId, onChangeFavorite } = this.props;
 
