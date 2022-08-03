@@ -15,7 +15,7 @@ class Album extends React.Component {
       albumInfo: {},
       albumTracks: [],
       stateSave: false,
-      stateChecked: [],
+      // stateChecked: [],
     };
   }
 
@@ -31,9 +31,9 @@ class Album extends React.Component {
     });
   }
 
-  clearCheked = () => {
-    this.setState({ stateChecked: [] });
-  }
+  // clearCheked = () => {
+  //   this.setState({ stateChecked: [] });
+  // }
 
   handleChange = (objeto, { target }) => {
     if (target.checked) {
@@ -69,7 +69,7 @@ class Album extends React.Component {
               <section>
                 <ul>
                   {(albumTracks.length > 0) && (
-                    albumTracks.map((item, index) => (
+                    albumTracks.map((item) => (
                       <li key={ item.trackId }>
                         <MusicCard
                           trackName={ item.trackName }
