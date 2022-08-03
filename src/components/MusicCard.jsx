@@ -2,8 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class MusicCard extends React.Component {
+  // constructor() {
+  //   super();
+
+  //   this.state = {
+  //     check: false,
+  //   };
+  // }
+
+  // hanndleChange = () => {
+  //   const { trackId, setCheked } = this.props;
+  //   const isCheked = setCheked.find(({ idChk }) => idChk === trackId);
+
+  //   this.setState({ check: !!(isCheked) });
+  // }
+
   render() {
-    const { trackName, previewUrl, trackId, onChangeFavorite } = this.props;
+    const { trackName, previewUrl, trackId, onChangeFavorite, setCheked } = this.props;
+    const isCheked = setCheked.some(({ idChk }) => idChk === trackId);
+    // const { check } = this.state;
 
     return (
       <div>
@@ -25,7 +42,12 @@ class MusicCard extends React.Component {
               type="checkbox"
               name={ trackId }
               id="chkFavorite"
+              // checked={ !!(isCheked) }
+              checked={ isCheked }
+              // checked={ check }
+              // onClick={ onChangeFavorite }
               onChange={ onChangeFavorite }
+              // onChange={ this.hanndleChange }
             />
           </label>
         </div>
@@ -39,6 +61,11 @@ MusicCard.propTypes = {
   previewUrl: PropTypes.string.isRequired,
   trackId: PropTypes.number.isRequired,
   onChangeFavorite: PropTypes.func.isRequired,
+  setCheked: PropTypes.arrayOf(
+    PropTypes.shape({
+      idChk: PropTypes.number.isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default MusicCard;
