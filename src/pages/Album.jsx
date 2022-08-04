@@ -28,7 +28,6 @@ class Album extends React.Component {
       stateSave: true,
     }, async () => {
       const favorireSongs = await getFavoriteSongs();
-      console.log(favorireSongs);
       favorireSongs.map(({ trackId }) => this.checkStateChecked(trackId));
       this.setState(() => ({ stateSave: false }));
     });
