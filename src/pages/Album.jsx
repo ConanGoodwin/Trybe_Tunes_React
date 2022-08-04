@@ -5,7 +5,6 @@ import getMusics from '../services/musicsAPI';
 import MusicCard from '../components/MusicCard';
 import { addSong, getFavoriteSongs, removeSong } from '../services/favoriteSongsAPI';
 import Loading from '../components/Loading';
-// import '../componentsCss/musicCard.css';
 
 class Album extends React.Component {
   constructor() {
@@ -58,8 +57,6 @@ class Album extends React.Component {
   }
 
   handleChange = (objeto, { target }) => {
-    // console.log(stateChecked);
-
     if (target.checked) {
       this.setState({ stateSave: true }, async () => {
         await addSong(objeto);
@@ -128,4 +125,3 @@ Album.propTypes = {
 };
 
 export default Album;
-//
