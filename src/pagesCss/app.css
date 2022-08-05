@@ -1,0 +1,25 @@
+.App {
+  background-color: rgb(118, 140, 106);
+}
+
+.top {
+  background-color: black;
+  border: 1px solid black;
+  color: goldenrod;
+  padding: 0 20px;
+}
+
+.menuTop {
+  background-color: gold;
+}
+
+.menuTop p {
+  margin: 0;
+  padding: 5px;
+}
+
+.menu {
+  border: 1px solid goldenrod;
+  display: flex;
+  justify-content: space-around;
+}

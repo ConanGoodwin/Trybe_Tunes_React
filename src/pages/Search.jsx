@@ -44,11 +44,14 @@ class Search extends React.Component {
     return (
       <div data-testid="page-search">
         <Header />
+        <br />
         { (stateSearch) ? <Loading />
           : (
             <form>
               <label htmlFor="txtLoginName">
                 Artista:
+                {' '}
+                {' '}
                 <input
                   type="text"
                   name=""
@@ -63,6 +66,7 @@ class Search extends React.Component {
                   disabled={ btnDisabled }
                   data-testid="search-artist-button"
                   onClick={ this.handleClick }
+                  className="button"
                 />
               </label>
             </form>

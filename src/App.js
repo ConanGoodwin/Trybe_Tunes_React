@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
 import ProfileEdit from './pages/ProfileEdit';
 import Search from './pages/Search';
-// import './App.css';
+import './pagesCss/app.css';
 
 class App extends React.Component {
   constructor() {
@@ -28,7 +28,9 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <p>TrybeTunes</p>
+          <div className="top">
+            <p>TrybeTunes</p>
+          </div>
           <Switch>
             <Route
               exact
