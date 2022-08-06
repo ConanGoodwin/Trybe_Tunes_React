@@ -9,7 +9,6 @@ class Favorites extends React.Component {
     super();
 
     this.state = {
-      // albumInfo: {},
       albumTracks: [],
       stateSave: false,
       stateChecked: [],
@@ -17,11 +16,7 @@ class Favorites extends React.Component {
   }
 
   componentDidMount = async () => {
-    // const { match: { params: { id } } } = this.props;
-    // const respApi = await getMusics(id);
-
     this.setState({
-      // albumInfo: respApi[0],
       albumTracks: await getFavoriteSongs(),
       stateSave: true,
     }, async () => {
