@@ -23,7 +23,6 @@ class Profile extends React.Component {
     // const { match: { params: { id } } } = this.props;
     const respApi = await getUser();
     const { name, email, description, image } = respApi;
-    console.log(respApi);
 
     this.setState({
       stateSave: true,
