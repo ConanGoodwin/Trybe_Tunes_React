@@ -37,12 +37,13 @@ class Login extends React.Component {
     const { btnDisabled, name, stateSave } = this.state;
 
     return (
-      <div data-testid="page-login">
+      <div data-testid="page-login" className="pageLogin">
         { (stateSave) ? <Loading />
           : (
             <div className="form">
+              <div className="barraTopo" />
               <form>
-                <label htmlFor="txtLoginName">
+                <label htmlFor="txtLoginName" className="lblLogin">
                   Nome:
                   {' '}
                   {' '}

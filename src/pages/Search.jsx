@@ -3,6 +3,7 @@ import CardAlbum from '../components/CardAlbum';
 import Header from '../components/Header';
 import Loading from '../components/Loading';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import '../pagesCss/search.css';
 
 class Search extends React.Component {
   constructor() {
@@ -42,13 +43,13 @@ class Search extends React.Component {
     const { btnDisabled, name, stateSearch, searchResult, artista } = this.state;
 
     return (
-      <div data-testid="page-search">
+      <div data-testid="page-search" className="pageSearch">
         <Header />
         <br />
         { (stateSearch) ? <Loading />
           : (
-            <form>
-              <label htmlFor="txtLoginName">
+            <form className="formSearch">
+              <label htmlFor="txtLoginName" className="lblSearch">
                 Artista:
                 {' '}
                 {' '}
@@ -57,6 +58,7 @@ class Search extends React.Component {
                   name=""
                   id="txtLoginName"
                   value={ name }
+                  className="txtSearch"
                   data-testid="search-artist-input"
                   onChange={ this.handleChange }
                 />

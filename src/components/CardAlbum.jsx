@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import '../componentsCss/cardalbum.css';
 
 class CardAlbum extends React.Component {
   render() {
@@ -8,7 +9,7 @@ class CardAlbum extends React.Component {
     const { collectionId, trackCount } = this.props;
 
     return (
-      <div style={ { display: 'flex', flexDirection: 'column' } }>
+      <section className="cardAlbum">
         <p>{artistName}</p>
         <Link
           to={ `/album/${collectionId}` }
@@ -22,7 +23,7 @@ class CardAlbum extends React.Component {
           {' '}
           <span>{trackCount}</span>
         </p>
-      </div>
+      </section>
     );
   }
 }

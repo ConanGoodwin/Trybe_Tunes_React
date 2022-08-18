@@ -1,16 +1,35 @@
+@font-face {
+  font-family: neon;
+  src: url(../fonts/Neoneon-3zaD6.otf);
+}
+
+@font-face {
+  font-family: artist;
+  src: url(../fonts/PinballWhizNf-BqMl.ttf);
+}
+
+@font-face {
+  font-family: menu;
+  src: url(../fonts/RocketScript-GOOO.ttf);
+}
+
 .App {
-  background-color: rgb(118, 140, 106);
+  /* background-color: rgb(118, 140, 106); */
+  /* background-color: black; */
 }
 
 .top {
   background-color: black;
   border: 1px solid black;
+  font-size:30px;
+  font-family: 'neon';
   color: goldenrod;
   padding: 0 20px;
 }
 
 .menuTop {
   background-color: gold;
+  margin-left: 1px;
 }
 
 .menuTop p {
@@ -20,6 +39,10 @@
 
 .menu {
   border: 1px solid goldenrod;
+  background-color: black;
   display: flex;
   justify-content: space-around;
+  font-family: 'menu';
+  font-size: 20px;
+  margin-left: 1px;
 }

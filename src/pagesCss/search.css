@@ -1,0 +1,20 @@
+.pageSearch {
+  min-height: 600px;
+}
+
+.formSearch {
+  display: flex;
+  align-items: center;
+}
+
+.lblSearch {
+  font-family: 'artist';
+  color: gold;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.txtSearch{
+  margin: 5px 10px 5px 5px;
+}

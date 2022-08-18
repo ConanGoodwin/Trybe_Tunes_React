@@ -1,0 +1,14 @@
+.musicCard {
+  /* border: 10px solid white; */
+  color: goldenrod;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 5px 5px 10px;
+}
+
+.trackName{
+  width: 100%;
+}

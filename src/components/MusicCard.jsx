@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../componentsCss/musiccard.css';
 
 class MusicCard extends React.Component {
   render() {
@@ -7,8 +8,8 @@ class MusicCard extends React.Component {
     const isCheked = setCheked.some(({ idChk }) => idChk === trackId);
 
     return (
-      <div>
-        <p>{trackName}</p>
+      <section className="musicCard">
+        <p className="trackName">{trackName}</p>
         <div>
           <audio data-testid="audio-component" src={ previewUrl } controls>
             <track kind="captions" />
@@ -32,7 +33,7 @@ class MusicCard extends React.Component {
             />
           </label>
         </div>
-      </div>
+      </section>
     );
   }
 }

@@ -1,0 +1,14 @@
+.cardAlbum {
+  border: 1px solid goldenrod;
+  border-radius: 10%;
+  box-shadow: 10px 5px 5px rgb(48, 47, 47);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  height: 380px;
+}
